@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+</head>
+    <h1>회원가입 양식</h1>
+    <form>
+        <fieldset>
+            <legend>회원가입</legend>
+
+            <label for="username">이메일
+                <input type="email" id="username" placeholder="user1@kopo.ac.kr">
+            </label>
+            <br/>
+            <!-- password type으로 input을 하면 화면에 표시되지 않음-->
+            <label for="password">패스워드
+                <input type="PASSWORD" id="password">
+            </label>
+            <br/> 
+            <label for="password">패스워드 확인
+                <input type="PASSWORD" id="password">
+            </label>
+        </fieldset>
+    </form>
+    <!-- 같은 name을 설정하면 둘 중하나의 버튼만 클릭 가능-->
+    <label for="gender-man">남자</label>
+    <input type="radio" name="gender" value="남자" id="gender-man">
+    <label for="gender-woman">여자</label>
+    <input type="radio" name="gender" value="여자" id="gender-woman">
+
+    <br/>
+    <input type="button" value="확인">
+</body>
+</html>
