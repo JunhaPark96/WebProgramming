@@ -1,0 +1,13 @@
+
+/*외부스타일*/
+body {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: brown;
+}
+header {
+    color: #0000ff;
+    background-color: antiquewhite;
+}
