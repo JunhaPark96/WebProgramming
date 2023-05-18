@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        div div {
+            border: 1px dashed red;
+        }
+
+        .el-1 {
+            padding: 10px;
+        }
+
+        /* 상하 좌우*/
+        .el-2 {
+            padding: 10px 40px;
+        }
+
+        /*상 좌우 하*/
+        .el-3 {
+            padding: 60px 100px 30px;
+        }
+
+        /* padding과 마찬가지로 상하좌우 순 */
+        .inner-1 {
+            margin: 10px;
+        }
+
+        .inner-2 {
+            margin: 10px 30px;
+        }
+
+        .inner-3 {
+            margin: 10px 30px 50px;
+        }
+
+        .inner-4 {
+            margin: 10px 30px 50px 70px;
+        }
+
+        /* 음수를 주면 땡겨옴 */
+        .inner-5 {
+            margin: -10px;
+        }
+        .inner-6{
+            margin-top: -10px;
+        }
+        .inner-7{
+            margin-bottom: -10px;
+        }
+        .inner-8{
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- 패딩: 내부 영역 -->
+    <h2>Padding 영역</h2>
+    <div class="el-1">
+        <div>요소1</div>
+    </div>
+    <div class="el-2"> 요소2 </div>
+    <div class="el-3"> 요소3 </div>
+
+    <h2>Margin 영역</h2>
+    <!-- 마진: 내부영역의 바깥 쪽  -->
+    <div>
+        <div class="inner-1"> 요소1 </div>
+        <div class="inner-2"> 요소2 </div>
+        <div class="inner-3"> 요소3 </div>
+        <div class="inner-4"> 요소4 </div>
+    </div>
+    <h2>Margin 영역2</h2>
+    <div>
+        <div class="inner-5"> 요소1 </div>
+        <div class="inner-6"> 요소2 </div>
+        <div class="inner-7"> 요소3 </div>
+        <div class="inner-8"> 요소4 </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css4</title>
+    <style>
+        /* 네거티브 마진 */
+        .outer{
+            border: 1px dashed red;
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+        }
+        .inner {
+            border: 1px dashed blue;
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+        }
+        .el-1 {
+            margin-top: -100px;
+        }
+        .el-2 {
+            margin-bottom: 50px;
+        }
+        .el-3 {
+            margin: 50px;
+        }
+        .el-4 {
+            margin-top: -100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 두 개의 요소의 마진이 중첩이 되면 하나만 선택되어 적용된다.(큰 값이 우선) -->
+    <h2>마진 병합</h2>
+    <div class="outer">
+        <div class="inner el-1"> 요소1 </div>
+    </div>
+    <div class="outer">
+        <div class="inner el-2"> 요소2 </div>
+    </div>
+    <div class="outer">
+        <div class="inner el-3"> 요소2 </div>
+    </div>
+    <div class="outer">
+        <div class="inner el-4"> 요소2 </div>
+    </div>
+</body>
+</html>
