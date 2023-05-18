@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 1px solid black;
+            text-indent: 50px;
+        }
+        /* text-align은 inline요소만 배치할 수 있다
+            div태그는 블럭 속성이지만 class가 속성을 이어받기 때문에 정렬이 여전히 유효하다*/
+        .align-left{
+            text-align: left;
+        }
+        .align-center{
+            text-align: center;
+        }
+        .align-right{
+            text-align: right;
+        }
+        .span{
+            border: 1px dotted red;
+        }
+        .div{
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트</h1>
+    <p>무대위의 moon walk 난 움직여 smoothe like criminal
+        해가뜰땐 gentle man but 밤만되면 미친놈
+    </p>
+
+    <span class="align-left span">
+        텍스트1
+    </span>
+    <div class="align-center div">
+        <span>텍스트2</span>
+    </div>
+    <div class="align-right div">
+        텍스트3
+    </div>
+</body>
+</html>
