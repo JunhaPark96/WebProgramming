@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        /* 요소를 왼쪽이나 오른쪽에 떠 있게 만듦*/
+        .left-img{
+            float: right;
+            width: 100px;
+            margin-right: 25px;
+            border: 1px solid black;
+        }
+        h1{
+            border: 1px solid red;
+            margin: 0;
+            height: 50px;
+        }
+        h2{
+            border: 1px solid blue;
+            margin: 0;
+            padding: 0;
+            height: 50px;
+        }
+        /* float 속성 적용 해제*/
+        .price{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <img src="../image/arrow.svg" class="left-img">
+    <h1>화살하나</h1>
+    <p class="price">1000</p>
+    <h2>요요</h2>
+    <h3>이잉</h3>
+</body>
+</html>
