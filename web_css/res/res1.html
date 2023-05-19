@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 미디어 쿼리*/
+        #wrapper{
+
+        }
+        @media (max-width: 1000px){
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width: 750px){
+            body{
+                background-color: blue;
+            }
+        }
+        @media (max-width: 500px){
+            body{
+                background-color: rgb(128, 14, 14);
+            }
+        }
+        div{
+            border: 1px solid black;
+            float: left;
+            width: 250px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="1"></div>
+        <div class="2"></div>
+        <div class="3"></div>
+        <div class="4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body {
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            border: 1px solid black;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            width: 100%;
+            background-color: aqua;
+            height: 50px;
+        }
+
+        #footer {
+            width: 100%;
+            background-color: beige;
+            height: 50px;
+        }
+
+        #main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        #side {
+            width: 20%;
+            background-color: aliceblue;
+            flex-shrink: 0;
+        }
+
+        #content {
+            width: 70%;
+            background-color: rgb(84, 0, 194);
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+        }
+        #content > nav{
+            background-color: darkcyan;
+        }
+        #content > main{
+            background-color: white;
+            flex-grow: 1;
+        }
+        #content > #copyright{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">header</div>
+        <div id="main">
+            <div id="side">side</div>
+            <div id="content">
+                <nav>nav</nav>
+                <main>content</main>
+                <div id="copyright">copyright</div>
+            </div>
+        </div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+
+</html>
