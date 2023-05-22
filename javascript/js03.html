@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bgChange(hexNumber){
+            document.bgColor = hexNumber;
+        }
+        
+        var now = new Date();
+        var display = now.toDateString();
+        document.write(display);
+    </script>
+</head>
+<body>
+    <form method="post" name="background">
+        <input type="button" value="green" onclick="bgChange('#00AA00')">
+        <input type="button" value="yellow" onclick="bgChange('#FFFF00')">
+        <input type="button" value="pink" onclick="bgChange('#FFAAFF')">
+    </form>
+</body>
+</html>
