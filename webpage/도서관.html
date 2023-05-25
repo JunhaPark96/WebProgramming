@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="headerInner clearfix">
+        <div id="mobileIndexOpen">
+          <a href="#open"><span class="blind">모바일 메뉴 열기</span></a>
+        </div>
+        <div id="siteMenu" class="siteMenu">
+          <ul>
+            <li class="login">
+              <a href="/cyber/login/memberLogin.do">로그인</a>
+            </li>
+            <li class="join">
+              <a href="/cyber/member/memberJoinAgree.do">회원가입</a>
+            </li>
+            <li class="snsLink">
+              <a
+                href="https://blog.naver.com/golibrary00"
+                title="경기사이버도서관 블로그 새창열림"
+                target="blank"
+                ><img
+                  src="/include/image/cyber/main/blog.jpg"
+                  alt="네이버블로그"
+              /></a>
+              <a
+                href="https://www.facebook.com/golibrary.kr"
+                title="경기사이버도서관 페이스북 새창열림"
+                target="blank"
+                ><img
+                  src="/include/image/cyber/main/facebook.jpg"
+                  alt="페이스북"
+              /></a>
+              <a
+                href="https://www.instagram.com/golibrary1"
+                title="경기사이버도서관 인스타 새창열림"
+                target="blank"
+                ><img src="/include/image/cyber/main/insta.jpg" alt="인스타"
+              /></a>
+              <a
+                href="https://pf.kakao.com/_dxdaEC"
+                title="경기사이버도서관 카카오 새창열림"
+                target="blank"
+                ><img src="/include/image/cyber/main/kakao.jpg" alt="카카오"
+              /></a>
+              <a
+                href="https://www.youtube.com/channel/UCemWfBzuXEQs0pF3hsvH14w/featured"
+                title="경기사이버도서관 유튜브 새창열림"
+                target="blank"
+                ><img src="/include/image/cyber/main/youtube.jpg" alt="유튜브"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <h1 id="logo">
+          <a href="/cyber/index.do"
+            ><img
+              src="/include/image/cyber/common/logo.png"
+              alt="경기도사이버도서관"
+          /></a>
+        </h1>
+        <a href="#back" id="blackBG"
+          ><span class="blind">이전으로 돌아가기</span></a
+        >
+
+        <!--Forced tab Show Que-->
+        <nav id="gnbNav">
+          <div id="mobileIndexClose">
+            <a href="#close"><span class="blind">모바일 메뉴 닫기</span></a>
+          </div>
+          <ul id="gnb" class="clearfix" style="overflow: hidden">
+            <li id="gnb1" class="">
+              <a href="/cyber/search/catalogSearch.do" class=""
+                >도서관 서비스<span class="en">LIBRARY SERVICE</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/search/catalogSearch.do">통합자료검색</a>
+                </li>
+                <li>
+                  <a href="/cyber/ndsl/artiSearch.do">학술정보검색</a>
+                  <ul class="MkTab">
+                    <li><a href="/cyber/ndsl/artiSearch.do">논문</a></li>
+                    <li><a href="/cyber/ndsl/patentSearch.do">특허</a></li>
+                    <li>
+                      <a href="/cyber/ndsl/reportSearch.do">연구보고서</a>
+                    </li>
+                    <li><a href="/cyber/ndsl/attSearch.do">분석/동향</a></li>
+                  </ul>
+                </li>
+                <li><a href="/cyber/ksearch/main.do">문화원자료검색</a></li>
+                <li>
+                  <a href="/cyber/firstlib/submain.do" class=""
+                    >내 생애 첫 도서관</a
+                  >
+                  <ul class="MkSub">
+                    <li>
+                      <a href="/cyber/contents/firstLibInfo/contents.do"
+                        >서비스 안내</a
+                      >
+                      <ul class="MkTab">
+                        <li>
+                          <a href="/cyber/contents/firstLibInfo/contents.do"
+                            >서비스 소개</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/cyber/contents/firstLibStep/contents.do"
+                            >진행절차</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/cyber/contents/firstLibExample/contents.do"
+                            >신청과정</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/cyber/firstlib/joinLibraryList.do"
+                            >참여도서관</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/cyber/firstlib/searchSimple.do">자료검색</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/firstlib/loanBestList.do">인기도서</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/bbs/bmk001/first/bbsPostList.do"
+                        >공지사항</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/bbs/bmk002/first/bbsPostList.do"
+                        >자주하는질문(FAQ)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/duru/submain.do" class="">두루두루</a>
+                  <ul class="MkSub">
+                    <li>
+                      <a href="/cyber/contents/duruInfo/contents.do"
+                        >서비스 안내</a
+                      >
+                      <ul class="MkTab">
+                        <li>
+                          <a href="/cyber/contents/duruInfo/contents.do"
+                            >서비스 소개</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/cyber/contents/duruStep/contents.do"
+                            >진행절차</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/cyber/contents/duruExample/contents.do"
+                            >신청과정</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/cyber/duru/searchSimple.do">자료검색</a></li>
+                    <li><a href="/cyber/duru/loanBestList.do">인기도서</a></li>
+                    <li>
+                      <a href="/cyber/bbs/bmk001/duru/bbsPostList.do"
+                        >공지사항</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/bbs/bmk002/duru/bbsPostList.do"
+                        >자주하는질문(FAQ)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="/cyber/contents/nill/contents.do">책바다</a></li>
+                <li>
+                  <a href="/cyber/contents/chaeknarae/contents.do">책나래</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/ask/contents.do">사서에게물어보기</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/foreignJournal/contents.do"
+                    >외국학술지 원문 복사</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="gnb2" class="">
+              <a href="/cyber/ebook/ebookMain.do" class=""
+                >전자책<span class="en">ELECTRONIC BOOK</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/ebook/ebookMain.do">일반전자책</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/ebook/ebookList.do?categoryNo1=11"
+                        >전체도서</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookBestList.do">많이 보는 책</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookRecommendList.do"
+                        >추천 하는 책</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookNewList.do">새로 나온 책</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookSeriesList.do">시리즈</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="/cyber/ebook/kyoboBook.do">구독형전자책</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/ebook/kyoboBook.do"
+                        >구독형전자책 이용안내</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/contents/subEbookMoive/contents.do"
+                        >구독형전자책 이용방법 동영상</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="/cyber/ebook/ebookChild.do">어린이전자책</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/ebook/ebookChildList.do?categoryNo1=12"
+                        >전체도서</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookBestList.do?categoryNo1=12"
+                        >인기도서</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/cyber/ebook/ebookRecommendList.do?categoryNo1=12"
+                        >이책 어때</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="/cyber/contents/overdrive/contents.do">영어전자책</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/contents/overdrive/contents.do"
+                        >영어전자책 이용안내</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/contents/overdriveInfoMovie/contents.do"
+                        >영어전자책 이용방법 동영상</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="/cyber/ebook/audioBook.do">오디오북</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/ebook/audioBookList.do">전체도서</a>
+                    </li>
+                    <li>
+                      <a
+                        href="/cyber/ebook/audioBookBestList.do?categoryNo2=오디오북&amp;searchCategoryNm=오디오북"
+                        >인기도서</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/cyber/ebook/audioBookRecommendList.do?categoryNo2=오디오북&amp;searchCategoryNm=오디오북"
+                        >이책 어때</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/ebook/ebookSearchSimple.do"
+                    >전자책 상세검색</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/contents/musical/contents.do">영어뮤지컬</a>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk001/ebook/bbsPostList.do">공지사항</a>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk002/ebook/bbsPostList.do"
+                    >자주하는질문(FAQ)</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/contents/ebookBorrowInfo/contents.do"
+                    >이용안내</a
+                  >
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/contents/ebookBorrowInfo/contents.do"
+                        >전자책 이용안내</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/contents/ebookInfoVideo/contents.do"
+                        >전자책 이용안내 동영상</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/contents/ebookAudienInfo/contents.do"
+                        >오디언(오디오북) 이용안내</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/contents/gSeek/contents.do">GSEEK 지식</a>
+                </li>
+              </ul>
+            </li>
+            <li id="gnb3" class="">
+              <a href="/cyber/libSearch/libraryList.do" class=""
+                >도서관지원<span class="en">LIBRARY SUPPORT</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/libSearch/libraryList.do">도서관찾기</a>
+                </li>
+                <li>
+                  <a href="/cyber/closedLibSearch/closedLibraryList.do"
+                    >도서관휴관일</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk006/home/bbsPostList.do">정책자료</a>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk007/home/bbsPostList.do">법령자료</a>
+                </li>
+                <li class="mobileHide">
+                  <a href="/cyber/publication/publicationList.do">발간자료</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/stats/contents.do">도서관통계</a>
+                </li>
+                <!-- <li class="mobileHide"><a href="http://bigdata.library.kr/index.aspx" target="_blank" title="새 창 열림">도서관빅데이터</a></li> -->
+                <!--<li>
+                    <a href="/cyber/contents/smlibJoin/contents.do">작은도서관지원</a>
+                    <ul class="MkTab bracketTit">
+                        <li><a href="/cyber/contents/smlibJoin/contents.do">작은도서관등록</a></li>
+                        <li><a href="/cyber/contents/smlibCancel/contents.do">등록변경 및 폐관&middot;등록취소</a></li>
+                    </ul>
+                </li>-->
+                <!--
+                <li>
+                    <a href="/cyber/contents/smlibLectureInfo/contents.do">작은도서관 강사 인력풀</a>
+                    <ul class="MkTab">
+                        <li><a href="/cyber/contents/smlibLectureInfo/contents.do">개요</a></li>
+                        <li><a href="/cyber/teacher/lectureTeacherList.do">강사현황</a></li>
+                    </ul>
+                </li>
+				-->
+                <li>
+                  <a href="/cyber/contents/bookDream/contents.do"
+                    >책나눔 『책드림, 꿈드림』</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="gnb4" class="">
+              <a href="/cyber/bbs/bmk001/common/bbsPostList.do" class=""
+                >소통마당<span class="en">COMMUNICATION</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/bbs/bmk001/common/bbsPostList.do">공지사항</a>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk002/common/bbsPostList.do"
+                    >자주하는질문(FAQ)</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk003/home/bbsPostList.do">묻고답하기</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/ebookHopeInfo/contents.do"
+                    >희망전자책신청</a
+                  >
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/contents/ebookHopeInfo/contents.do"
+                        >신청안내</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookHopeRegist.do">신청하기</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/ebook/ebookHopeList.do">신청현황</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobileHide">
+                  <a href="/newsletter/index.do" target="_blank">뉴스레터</a>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk004/home/bbsPostList.do">일반자료실</a>
+                </li>
+              </ul>
+            </li>
+            <li id="gnb5" class="">
+              <a href="/cyber/contents/history/contents.do" class=""
+                >도서관 안내<span class="en">LIBRARY GUIDE</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/contents/history/contents.do">도서관 소개</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/staff/contents.do">조직·업무</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/gglib/contents.do"
+                    >경기도대표도서관</a
+                  >
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/contents/gglib/contents.do"
+                        >소개 및 안내</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/bbs/bmk013/common/bbsPostList.do"
+                        >공지사항</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/bbs/bmk014/home/bbsPostList.do"
+                    >경기도 작은도서관 도우미</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/contents/location/contents.do"
+                    >찾아오시는길</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/contents/cctv/contents.do"
+                    >영상정보기기 운영관리지침</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="gnb6" class="">
+              <a href="/cyber/mypage/memberInfo.do" class=""
+                >나만의도서관<span class="en">MY LIBRARY</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/mypage/memberInfo.do">서비스 이용현황</a>
+                </li>
+                <li>
+                  <a href="/cyber/mypage/ebook/ebookLoanList.do">전자책</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookLoanList.do">내서재</a>
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookReservationList.do"
+                        >예약현황</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookHistoryList.do"
+                        >대출이력</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookHopeMyList.do"
+                        >희망전자책 신청조회</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookMyReviewList.do"
+                        >나의별점/리뷰</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/ebook/ebookBasketList.do"
+                        >관심목록</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/mypage/basket/basketList.do">책바구니</a>
+                </li>
+                <li>
+                  <a href="/cyber/mypage/firstlib/transStatusList.do"
+                    >내 생애 첫 도서관</a
+                  >
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/mypage/firstlib/transStatusList.do"
+                        >대출현황</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/firstlib/transHistoryList.do"
+                        >대출이력</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/cyber/mypage/duru/transStatusList.do">두루두루</a>
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/mypage/duru/transStatusList.do"
+                        >대출현황</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/duru/transHistoryList.do"
+                        >대출이력</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="/cyber/mypage/bbs/bmk003/home/myBbsPostList.do"
+                    >묻고답하기</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/cyber/mypage/member/memberModify.do"
+                    >회원정보수정</a
+                  >
+
+                  <ul class="MkTab">
+                    <li>
+                      <a href="/cyber/mypage/member/memberModify.do"
+                        >정보수정</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="/cyber/mypage/member/pwdChange.do"
+                        >비밀번호 변경</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/member/memberSnsUpdate.do"
+                        >SNS/포털ID 연동</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cyber/mypage/member/memberOutCheck.do"
+                        >회원탈퇴</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li id="gnb7">
+              <a href="/cyber/login/memberLogin.do" class=""
+                >회원정보<span class="en">MEMBER</span></a
+              >
+              <ul style="display: none">
+                <li><a href="/cyber/login/memberLogin.do">로그인</a></li>
+                <li>
+                  <a href="/cyber/member/memberJoinAgree.do">회원가입</a>
+                </li>
+                <li><a href="/cyber/member/memberFindId.do">아이디찾기</a></li>
+                <li>
+                  <a href="/cyber/member/memberFindPwd.do">비밀번호찾기</a>
+                </li>
+              </ul>
+            </li>
+
+            <li id="gnb8">
+              <a href="/cyber/contents/terms/contents.do" class=""
+                >이용안내<span class="en">SITE GUIDE</span></a
+              >
+              <ul style="display: none">
+                <li>
+                  <a href="/cyber/contents/terms/contents.do">이용약관</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/privacy/contents.do"
+                    >개인정보처리방침</a
+                  >
+                </li>
+                <li>
+                  <a href="/cyber/contents/copyright/contents.do">저작권정책</a>
+                </li>
+                <li>
+                  <a href="/cyber/contents/sitemap/contents.do">사이트맵</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div id="submenuArea" style="display: none"></div>
+        </nav>
+        <!--Forced tab Show Que-->
+      </div>
+    </header>
+  </body>
+</html>
