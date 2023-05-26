@@ -66,16 +66,10 @@
 
 
 // ---------------------------------10 for in
-const students = ["Park", "Kim", "Lee", "Kim"];
-for (let idx in students){
-    students[idx] += "화이팅";
-    console.log(`${idx} 번째 학생은 ${students[idx]} 입니다`);
-}
-console.log(students);
+// const students = ["Park", "Kim", "Lee", "Kim"];
+// for (let idx in students){
+//     students[idx] += "화이팅";
+//     console.log(`${idx} 번째 학생은 ${students[idx]} 입니다`);
+// }
+// console.log(students);
 
-// ---------------------------------11 while
-
-
-
-
-// ---------------------------------12
