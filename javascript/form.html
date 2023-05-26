@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // body 문서까지 읽은 후 실행되는 이벤트
+        document.addEventListener('DOMContentLoaded', function(){
+            // 메소드 체인 가능
+            let okButton = document.querySelector('#submit');
+            okButton.addEventListener('click', function(){
+                // alert("확인버튼 클릭");
+                let username = document.querySelector('#username');
+                console.log(username.value);
+
+                let passwd = document.querySelector('#passwd');
+                console.log(passwd.value);
+                if (passwd.value == '123456'){
+                    alert("패스워드가 너무 단순합니다")
+                }
+                /*
+                서버로 전송하는 방법
+                1. form => 폼의 동작으로 서버로 전송
+                2. ajax => 비동기 통신으로 서버로 전송
+                */
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="username" name="username">
+    <input type="password" id="passwd" name="password">
+    <!-- 확인 버튼을 클릭하면 동작 -->
+    <button id="submit">확인</button>
+</body>
+</html>
