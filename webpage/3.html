@@ -1,15 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Javascript</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <title>Javascript</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input
+      type="button"
+      value="night"
+      onclick="
+      // querySelector는 태그를 선택하면 됨. 태그,아이디,클래스 가능 // 홀따옴표
+      target.style.backgroundColor = 'black';
+      // foreground color 선택
+      target.style.color = 'white';
+    "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+    // querySelector는 태그를 선택하면 됨. 태그,아이디,클래스 가능 // 홀따옴표
+    target.style.backgroundColor = 'white';
+    // foreground color 선택
+    target.style.color = 'black';
+  "
+    />
 
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-  <div id="grid">
+    <input
+      id="this"
+      type="button"
+      value="day"
+      onclick="
+    if (this.value == 'day'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      document.querySelector('#this').value = 'night';
+    } else{
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      document.querySelector('#this').value = 'day';
+    }
+  "
+    />
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
@@ -18,11 +53,52 @@
     <div id="article">
       <h2>Javascript</h2>
       <p>
-        Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[2] Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a
+        high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and
+        interpreted programming language. Alongside HTML and CSS, JavaScript is
+        one of the three core technologies of World Wide Web content production.
+        It is used to make webpages interactive and provide online programs,
+        including video games. The majority of websites employ it, and all
+        modern web browsers support it without the need for plug-ins by means of
+        a built-in JavaScript engine. Each of the many JavaScript engines
+        represent a different implementation of JavaScript, all based on the
+        ECMAScript specification, with some engines not supporting the spec
+        fully, and with many engines supporting additional features beyond ECMA.
       </p>
     </div>
-  </div>
+    <!-- this 키워드를 통해 자기 자신을 가리키자 -->
+    <!-- 최대한 중복 제거하자 변수선언도 방법 중 하나 -->
+    <input
+      type="button"
+      value="day"
+      onclick="
+      let target = document.querySelector('body');
+    if (this.value == 'day'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'night';
+      
+      // 모든 a 태그에 대해
+      let links = document.querySelectorAll('a');
+      let i = 0;
+      while (i < links.length){
+        links[i].style.color = 'powderblue';
+        i += 1;
+      }
+      
+    } else{
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'day';
 
-</body>
-
+      let links = document.querySelectorAll('a');
+      let i = 0;
+      while (i < links.length){
+        links[i].style.color = 'blue';
+        i += 1;
+      }
+    }
+    "
+    />
+  </body>
 </html>
