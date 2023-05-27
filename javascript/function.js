@@ -78,6 +78,11 @@
 // });
 
 
-
+let i = 1994;
+let now = new Date();
+while (i < now.getFullYear()) {
+    console.log(i);
+    i += 1;
+}
 
 
