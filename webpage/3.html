@@ -4,6 +4,8 @@
     <title>Javascript</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
@@ -30,18 +32,18 @@
     />
 
     <input
-      id="this"
+      id="self"
       type="button"
       value="day"
       onclick="
-    if (this.value == 'day'){
+    if (self.value == 'day'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
-      document.querySelector('#this').value = 'night';
+      document.querySelector('#self').value = 'night';
     } else{
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
-      document.querySelector('#this').value = 'day';
+      document.querySelector('#self').value = 'day';
     }
   "
     />
@@ -66,39 +68,15 @@
         fully, and with many engines supporting additional features beyond ECMA.
       </p>
     </div>
-    <!-- this 키워드를 통해 자기 자신을 가리키자 -->
+    <!-- self 키워드를 통해 자기 자신을 가리키자 -->
     <!-- 최대한 중복 제거하자 변수선언도 방법 중 하나 -->
+
     <input
       type="button"
       value="day"
       onclick="
-      let target = document.querySelector('body');
-    if (this.value == 'day'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'night';
-      
-      // 모든 a 태그에 대해
-      let links = document.querySelectorAll('a');
-      let i = 0;
-      while (i < links.length){
-        links[i].style.color = 'powderblue';
-        i += 1;
-      }
-      
-    } else{
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'day';
-
-      let links = document.querySelectorAll('a');
-      let i = 0;
-      while (i < links.length){
-        links[i].style.color = 'blue';
-        i += 1;
-      }
-    }
-    "
+        nightDayHandler(this);
+      "
     />
   </body>
 </html>
