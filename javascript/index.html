@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./if04.js"></script>
   </head>
   <body>
-    <button onclick="calcAge()">나이계산기</button>
+    <!-- <button onclick="calcAge()">나이계산기</button> -->
+    <h1>json 실습</h1>
+    <script>
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", "student.json");
+      xhr.send();
+      // document.write(xhr);
+
+      xhr.onreadystatechange = function (event) {
+        if (xhr.readyState == 4 || xhr.status == 200) {
+          let students = JSON.parse(xhr.responseText);
+          console.log(students);
+          renderHTML(students);
+        }
+      };
+
+      function renderHTML(contents) {
+        let htmlString = "";
+        for (let content of contents) {
+          htmlString += `
+            <h2>${content.name}</h2>
+            <ul>
+              <li>전공: ${content.major}</li>
+              <li>학점: ${content.grade}</li>
+            </ul>
+            <hr>
+          `;
+        }
+        document.getElementById("result").innerHTML = htmlString;
+      }
+
+    </script>
   </body>
 </html>

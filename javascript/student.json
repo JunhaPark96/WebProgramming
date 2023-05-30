@@ -1,0 +1,18 @@
+[
+
+    {
+        "name": "가나다",
+        "major": "ko",
+        "grade": 1
+    },
+    {
+        "name": "라마바",
+        "major": "en",
+        "grade": 2
+    },
+    {
+        "name": "사아자",
+        "major": "com",
+        "grade": 3
+    }
+]
