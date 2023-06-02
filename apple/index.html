@@ -8,14 +8,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="alert-box" id="alert">알림창
+
+    <div class="alert-box" id="alert">
+      <p id="alert-id"></p>
+      <p id="alert-pw"></p>
+      <button onclick="buttonCon()">닫기</button>
     </div>
-    <button onclick="document.getElementById('alert').style.display='none';"> 
-    닫기
-    </button>
-    <button onclick="document.getElementById('alert').style.display='block';">
-      버튼
-    </button>
-    <script></script>
+      <button onclick="buttonId()">버튼1</button>
+      <button onclick="buttonPasswd()">버튼2</button>
+
+    <script>
+      function buttonId() {
+        document.getElementById('alert-id').innerHTML = '아이디 입력';
+        document.getElementById('alert').style.display = 'block';
+      }
+      function buttonPasswd() {
+        document.getElementById('alert-pw').innerHTML = '비밀번호 입력';
+        document.getElementById('alert').style.display = 'block';
+      }
+      function buttonCon() {
+        document.getElementById('alert').style.display = 'none';
+      }
+    </script>
   </body>
 </html>
